@@ -12,7 +12,7 @@ class Libary:
     def lendBook(self, user, book):
         if book not in self.booksList:
             print("sorry, we do not have that book.")
-        elif book in self.lendBook:
+        elif book in self.lendDict:
             print(f"the book is already being used by {self.lendBook[book]}")
         else:
             self.lendDict[book] = user
@@ -22,7 +22,7 @@ class Libary:
         self.booksList.append(book)
         print(f"{book} has been added to the book list")
     def returnbook(self,book):
-        if book in self.lendDict[book]:
+        if book in self.lendDict:
             del self.lendDict[book]
             print("book has been returned")
         else:
@@ -44,7 +44,7 @@ if __name__ == '__main__':
             book = input("Enter the name of the book you want to lend: ")
             books.lendBook(user_name,book)
         elif user_choice == '3':
-            books = input("enter the book you want to add")
+            book = input("enter the book you want to add")
             books.addbook(book)
         elif user_choice == '4':
             book = input("enter the name of the book you want to return:  ")
