@@ -13,4 +13,3 @@ apple.show_details()
 banana = fruit("banana", "yellow")
 banana.show_details()
 del banana
-
