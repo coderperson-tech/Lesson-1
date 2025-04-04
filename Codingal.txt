@@ -1,3 +1,5 @@
 File in write mode....Hi i am peguin. I am 1 yr old
  File in append mode....Hi I am peguin. I am 1 yr oldHey everyone!
 Welcome to Codingal.Hi! i am peguin and i am 1yr old
+codigal is on a mission to make kids fall in love with Codinga
+coding is all about creating anything of your own
